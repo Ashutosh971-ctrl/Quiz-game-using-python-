@@ -23,7 +23,7 @@ for f in range(3):
                     print("..........................................................................................................................................................................................................................................")
                     print("""Q1. In the movie Piku, what does Amitabh Bachchan's character (Bhashkor Banerjee) suffer from?
                             1 CANCER
-                            2 ERECTILE DYSFUNCTION
+                            2 ERECTILE DYSFUNCTIONse
                             3 ARTHRITIS
                             4 CHRONIC CONSTIPATION """)
                     ans=int(input("Enter your answer :- "))
