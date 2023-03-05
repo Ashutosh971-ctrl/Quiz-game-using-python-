@@ -568,8 +568,10 @@ for f in range(3):
                         )
 
                 import mysql.connector as sa
-                a_s = sa.connect(host="localhost", user="root",
-                                 password=" ", database="asd")
+
+                a_s = sa.connect(
+                    host="localhost", user="root", password=" ", database="asd"
+                )
                 sad = a_s.cursor()
                 name = n
                 scr = s
@@ -587,8 +589,8 @@ for f in range(3):
             break
         else:
             print("WRONG PASSWORD!! :(")
-            print("NUMBER OF ATTEMPTS LEFT", h-g)
+            print("NUMBER OF ATTEMPTS LEFT", h - g)
             break
     else:
         print("WRONG USERNAME :(")
-        print("NUMBER OF ATTEMPTS LEFT", d-f)
+        print("NUMBER OF ATTEMPTS LEFT", d - f)
