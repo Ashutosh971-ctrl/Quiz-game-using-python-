@@ -1,16 +1,17 @@
-def quize(question, answer, score):
-    print("YOU HAVE CHOSEN BOLLYWOOD QUIZ")
-    print("..............................")
-    for i in range(0, 10):
+def quiz(question, answer, score):
+    i = -1
+    while i < 11:
+        i += 1
         print(question[i])
         user_input = int(input("Enter your answer :- "))
         if user_input == answer[i]:
-            print("\nCONGRATS! YOUR ANSWER IS CORRECT \n\n")
+            print("\nYOUR ANSWER IS CORRECT \n\n")
             score += 1
-        elif user_input != answer[i]:
-            print("\nOPPS! YOUR ANSWER IS INCORRECT \n\n")
+        elif user_input != answer[i] and user_input > 0 and user_input < 5:
+            print("\nYOUR ANSWER IS INCORRECT \n\n")
         else:
-            print("\nSORRY! YOU ENTER A INVALID OPTION. PLEASE ENTER A VALID ONE\n\n")
+            print("\nINVALID OPTION\n\n")
+            i -= 1
     return score
 
 
@@ -68,8 +69,8 @@ c = int(input("CHOOSE BETWEEN CATEGORIES 1, 2, 3\n1. BOLLYWOOD QUIZ\n2. GENRAL K
 yourAnswer = "Enter your answer :- "
 yourScore = "Your score = "
 if c == 1:
-    print(yourScore + str(quize(bollywoodQuestion, bollywoodAnswer, 0)))
+    print(yourScore + str(quiz(bollywoodQuestion, bollywoodAnswer, 0)))
 elif c == 2:
-    print(yourScore + str(quize(generalQuestion, generalAnswer, 0)))
+    print(yourScore + str(quiz(generalQuestion, generalAnswer, 0)))
 else:
-    print(yourScore + str(quize(sportsQuestion, sportsAnswer, 0)))
+    print(yourScore + str(quiz(sportsQuestion, sportsAnswer, 0)))
