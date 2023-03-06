@@ -3,6 +3,13 @@ correctAnswer = "CONGRATS! YOUR ANSWER IS CORRECT "
 incorrectAnswer = "OPPS! YOUR ANSWER IS INCORRECT "
 invalidAnswer = "SORRY! YOU ENTER A INVALID OPTION. PLEASE ENTER A VALID ONE "
 
+def checkAnswer(userAnswer, rightAnswer):
+    if userAnswer == rightAnswer:
+        print(correctAnswer)
+    elif userAnswer != rightAnswer:
+        print(incorrectAnswer)
+    else: print(invalidAnswer)
+
 print(
     "                                          Welcome to the Battle Of Brains the Quiz Game "
 )
@@ -48,14 +55,7 @@ for f in range(3):
                           4 CHRONIC CONSTIPATION """
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 4:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 1 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    elif ans > 4:
-                        print(invalidAnswer)
+                    checkAnswer(ans, 4)
                     print(
                         """Q2. The story of Kabhi Khushi Kabhie Gham revolves around the trials and tribulations of which family?
                           1 THE MALHOTRAS
@@ -64,15 +64,7 @@ for f in range(3):
                           4 THE OBEROIS"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 2:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 1 or ans == 4 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 2)
                     print(
                         """Q3. In Hera Pheri, what was Paresh Rawal's character called?
                           1 RAJU
@@ -81,15 +73,7 @@ for f in range(3):
                           4 BABURAO GANPATRAO APTE """
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 4:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 1 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 4)
                     print(
                         """Q4. In Dear Zindagi, what does Shah Rukh Khan's character, Dr Jehangir Khan, do?
                           1 HE IS A THERAPIST
@@ -98,15 +82,7 @@ for f in range(3):
                           4 HE IS A JOURNALIST """
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 1)
                     print(
                         """Q5. According to song'pappu can not dance', what brand of shirt does Pappu wear?
                           1 PRADA
@@ -115,15 +91,7 @@ for f in range(3):
                           4 CHANEL """
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 2:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 1 or ans == 4 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 2)
                     print(
                         """Q6. Which movie is this popular line from:"Dosti ka ek usool hai madam - no sorry, no thank you.'
                           1 KUCH KUCH HOTA HAI
@@ -132,15 +100,7 @@ for f in range(3):
                           4 ANDAZ APNA APNA """
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 3:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 1 or ans == 2 or ans == 4:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 3)
                     print(
                         """Q7. In the movie Kahaani, which Indian city does Vidya Bagchi visit in order to search for her missing husband?
                           1 AGRA
@@ -149,15 +109,7 @@ for f in range(3):
                           4 CHENNAI """
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 3:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 1 or ans == 2 or ans == 4:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 3)
                     print(
                         """Q8. Finish the quote from Om Shanti Om: 'Ek chutki sindoor ki keemat, tum kya jaano ___?
                           1 OM BABU
@@ -166,15 +118,7 @@ for f in range(3):
                           4 NAALAYAK"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 3:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 1 or ans == 2 or ans == 4:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 3)
                     print(
                         """Q9. What is the name of Saif Ali Khan from the movie Omkara?
                           1 RANCHHODDAS SHAMALDAS CHANCHAD
@@ -183,15 +127,7 @@ for f in range(3):
                           4 LANGDA TYAGI """
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 4:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 1 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 4)
                     print(
                         """Q10. In Jab We Met, what is the name of Geet's cousin?
                           1 ROOP
@@ -200,15 +136,7 @@ for f in range(3):
                           4 PRIYA """
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 1)
                 if c == 2:
                     print(
                         "                                             YOU HAVE CHOSEN GENERAL KNOWLEDGE QUIZ"
@@ -224,15 +152,7 @@ for f in range(3):
                           4.MARCO POLO"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 1)
                     print(
                         """Q2 WHO IS THE FIRST MAN TO REACH NORTH POLE?
                           1.ROBERT PEARY
@@ -241,15 +161,7 @@ for f in range(3):
                           4.TRYGVE LIE"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 1)
                     print(
                         """Q3 WHO IS FIRST SPACE TOURIST?
                           1.NIKOLAI BULGANIN
@@ -258,15 +170,7 @@ for f in range(3):
                           4.NAWANG GAMBU"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 3:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 1:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 3)
                     print(
                         """Q4 WHO IS THE FIRST EUROPEAN TO VISIT CHINA?
                           1.REITA FARIA
@@ -275,15 +179,7 @@ for f in range(3):
                           4.FRANCES PHIPPS"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 2:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 1 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 2)
                     print(
                         """Q5 WHICH IS THE FIRST CITY IS TO BE ATTACKED WITH ATOM BOMB?
                           1.WUHAN
@@ -292,15 +188,7 @@ for f in range(3):
                           4.NAGASAKI"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 3:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 1:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 3)
                     print(
                         """Q6 WHO IS THE FIRST EDUCATION MINISTER OF INDIA?
                           1.DR. RADHAKRISHNAN
@@ -309,15 +197,7 @@ for f in range(3):
                           4.ABDUL KALAM AZAD"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 4:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 1 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 4)
                     print(
                         """Q7 WHICH IS THE FIRST BANK OF INDIA?
                           1.STATE BANK OF INDIA
@@ -326,15 +206,7 @@ for f in range(3):
                           4.PUNJAB NATIONAL BANK"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 2:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 1 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 2)
                     print(
                         """Q8 WHO IS THE FIRST INDIAN WOMAN TO RECIEVE ASHOKA CHAKRA?
                           1.NIRAJ BHANOT
@@ -343,28 +215,12 @@ for f in range(3):
                           4.REITA FARIA"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 1)
                     print(
                         "Q9 WHO IS THE FIRST COUNTRY TO ISSUE PAPER CURRENCY?\n1.INDIA\n2.USA\n3.RUSSIA\n4.CHINA"
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 4:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 1 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 4)
                     print(
                         """Q10 WHICH IS THE FIRST SPACESHIP LAUNCHED ON MOON?
                           1.VIKING-1
@@ -373,15 +229,7 @@ for f in range(3):
                           4.AGNI"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 1)
                 if c == 3:
                     print(
                         "                                             YOU HAVE CHOSEN SPORTS QUIZ"
@@ -397,15 +245,7 @@ for f in range(3):
                           4.AUSTRALIA v/s NEW ZEALAND"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 3:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 1:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 3)
                     print(
                         """Q2 HOW MANY MEDALS DOES INDIA HAVE WON IN TOKYO OLYMPICS 2020?
                           1. 7
@@ -414,15 +254,6 @@ for f in range(3):
                           4. 4"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
                     print(
                         """Q3 WHO WON THE FIRST MEDAL FOR INDIA IN TOKYO OLYMPICS 2020?
                           1.NEERAJ CHOPRA
@@ -431,15 +262,7 @@ for f in range(3):
                           4.RAVI KUMAR DHAIYA"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 2:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 1 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 2)
                     print(
                         """Q4 WHO WON BRONZE MEDAL FOR INDIA IN WRESTLING IN TOKYO 2020?
                           1.RUPINDAR PAL SINGH
@@ -448,15 +271,7 @@ for f in range(3):
                           4.AMIT ROHIDAS"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 2:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 1 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 2)
                     print(
                         """Q5 WHO WON FIRST GOLD MEDAL FOR INDIA IN TOKYO 2020?
                           1.MANDEEP SINGH
@@ -465,15 +280,7 @@ for f in range(3):
                           4.SUMIT"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 2:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 1 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 2)
                     print(
                         """Q6 IN WHICH FIELD DOES INDIA WON THE GOLD MEDAL?
                           1.JAVELLIN THROW
@@ -482,15 +289,7 @@ for f in range(3):
                           4.WEIGHT LIFTING"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 1)
                     print(
                         """Q7 WHAT IS THE VENUE FOR THE WORLD TEST CHAMPIONSHIP (2019-2021) WHICH IS PLAYED BETWEEN INDIA v/s NEW ZEALAND?
                           1.THE AGEAS BOWL
@@ -499,15 +298,7 @@ for f in range(3):
                           4.TRENT BRIDGE"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 1)
                     print(
                         """Q8 WHAT IS THE VENUE FOR CRICKET WORLD CUP FINAL 2019?
                           1.LORD'S
@@ -516,15 +307,7 @@ for f in range(3):
                           4.THE OVAL"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 1)
                     print(
                         """Q9 IN WHICH COUNTRY DOES THE FIRST T20 WORLD CUP PLAYED IN 2007?
                           1.SOUTH AFRICA
@@ -533,15 +316,7 @@ for f in range(3):
                           4.AUSTRALIA"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
-
+                    checkAnswer(ans, 1)
                     print(
                         """Q10 WHO IS THE PLAYER OF SERIES IN 2011 WORLD CUP?
                           1.YUVRAJ SINGH
@@ -550,14 +325,7 @@ for f in range(3):
                           4.SACHIN TENDULKAR"""
                     )
                     ans = int(input(yourAnswer))
-                    if ans == 1:
-                        print(correctAnswer)
-                        s += 1
-                    elif ans == 4 or ans == 2 or ans == 3:
-                        print(incorrectAnswer)
-                        s += 0
-                    else:
-                        print(invalidAnswer)
+                    checkAnswer(ans, 1)
 
                     if s in range(0, 10):
                         print("Congrats!!!", n,
